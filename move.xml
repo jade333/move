@@ -7,10 +7,32 @@
             <field name="NUM">4000</field>
           </block>
         </value>
+      </block>
+    </next>
+  </block>
+  <block type="movement_right" id="109" x="417" y="-82">
+    <next>
+      <block type="robot_delay" id="111" inline="true">
+        <value name="DELAY">
+          <block type="math_number" id="118">
+            <field name="NUM">4000</field>
+          </block>
+        </value>
         <next>
-          <block type="movement_stop" id="99"></block>
+          <block type="movement_reverse" id="137">
+            <next>
+              <block type="robot_delay" id="139" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="146">
+                    <field name="NUM">4000</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
         </next>
       </block>
     </next>
   </block>
+  <block type="movement_stop" id="99" x="421" y="270"></block>
 </xml>
